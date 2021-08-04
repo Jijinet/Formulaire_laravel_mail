@@ -32,8 +32,8 @@ class ContactController extends Controller
      
 
 
-            $to_name = 'Bennouna Hicham';
-            $to_email = 'bennounahicham@gmail.com';
+            $to_name = 'Jihane';
+            $to_email = 'jihanrabat345@gmail.com';
             $data = array('username' => $to_name, 'mesg'=> "Votre message est enregistrer avec succes");
             Mail::send('mail', $data, function($message) use ($to_name, $to_email) {
             $message->to($to_email, $to_name)->subject('confirmation de formulaire');
